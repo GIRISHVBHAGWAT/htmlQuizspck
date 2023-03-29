@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"" content="width=device-width, initial-scale=1">
+  <style>.redColor{
+    color: red;
+    font-size:30px;
+    
+  }</style>
+<title></title>
+</head>
+<h1>hari om</h1>
+<body>
+<a class="redColor" id="cl" onclick="changeColor()">Satvik and Tamoghna</a>
+
+<script>
+var number=0;
+  function changeColor(){
+    var col=["red", "yellow","black","green","brown","blue","red","yellow","red"];
+    if(number<col.length){
+      number++;
+      console.log(number);
+      document.getElementById('cl').style.color=col[number];
+    } 
+    else{
+      number=0;
+    }
+  }
+  
+</script>
+</body>
+
+</html>
